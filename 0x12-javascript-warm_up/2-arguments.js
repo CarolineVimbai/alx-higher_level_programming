@@ -8,4 +8,4 @@ else if (numArgs == 1)
 	console.log('Argument found');}
 else
 {
-	console.log('Arguments found');}
+	console.log('${numArgs} Arguments found');}
