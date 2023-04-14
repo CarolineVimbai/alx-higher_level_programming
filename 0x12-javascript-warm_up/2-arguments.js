@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const numArgs = process.argv.slice(2);
+const numArgs = process.argv.length - 2;
 if (numArgs == 0)
 {
 	console.log('No argument');}
