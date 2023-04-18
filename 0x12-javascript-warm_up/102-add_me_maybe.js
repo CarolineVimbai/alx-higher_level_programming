@@ -1,4 +1,8 @@
 #!/usr/bin/node
-exports.addMemaybe = function (number, theFunction) {
-  theFunction(++number);
-};
+function myFunction(number) {
+  console.log("The number is:", number);
+}
+
+let myNumber = 5;
+incrementAndCall(myNumber, myFunction);
+
