@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""sends a request to the URL and displays 
-the body of the response (decoded in utf-8)."""
+""" This is a Python script that takes in a
+URL and an email, sends a POST."""
 
 import urllib.parse
 import urllib.request
