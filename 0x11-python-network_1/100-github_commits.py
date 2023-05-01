@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" evaluates candidates applying for a back-end 
-position with multiple technical challenges"""
+""" This is a Python script that takes your GitHub credentials
+and uses the GitHub API to display your id"""
 
 import requests
 import sys
