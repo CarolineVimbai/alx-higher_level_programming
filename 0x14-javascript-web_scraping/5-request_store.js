@@ -1,14 +1,12 @@
 #!/usr/bin/node
 const request = require('request');
-let n = 0;
-request.get(process.argv[2], (error, resp, body) => {
-  if (error) throw error;
-  for (const film of JSON.parse(body).results) {
-    for (const line of film.characters) {
-      if (line.endsWith('18/')) {
-        n++;
-      }
-    }
-  }
-  console.log(n);
+const fs = require('fs');
+const av = process.argv.slice(2);
+const url = av[0];
+const path = av[1];
+request.get(url, (err, resp, body) => {
+  if (err) throw err;
+  fs.writeFile(path, body, 'utf8', (error) => {
+    if (error) throw error;
+  });
 });
