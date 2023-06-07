@@ -1,2 +1,6 @@
-// adds the class red to the HTML tag HEADER when the user clicks on the tag DIV#red_header
-$('DIV#red_header').click(() => $('HEADER').addClass('red'));
+// toggles the class of the HTML tag HEADER
+// when the user clicks on the tag DIV#toggle_header
+$('DIV#toggle_header').click(() => {
+  $('HEADER').toggleClass('green');
+  $('HEADER').toggleClass('red');
+});
